@@ -1,0 +1,109 @@
+body {
+  text-align: center;
+  background: linear-gradient(145deg, wheat, rgb(196, 189, 85));
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 400px;
+  margin: 2rem auto;
+  height: 50px;
+  display: flex;
+}
+
+#pokname {
+  font-size: 1.5rem;
+  border: 5px solid orangered;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-right: none;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 7px;
+  background-color: wheat;
+}
+#pokname:focus {
+  outline: none;
+}
+#searchBtn {
+  background-color: brown;
+  color: wheat;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  height: 50px;
+  box-sizing: border-box;
+  border: 5px solid orangered;
+  border-left: none;
+}
+.card {
+  width: 350px;
+  /* height: 500px; */
+  margin: 2rem auto;
+  background-color: orange;
+  border: 1rem solid orangered;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card:hover {
+  box-shadow: 1rem 15px 5px rgb(142, 136, 61);
+  cursor: pointer;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 0.6rem solid wheat;
+  animation: flip-image 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+h2 {
+  background-color: wheat;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+h3 {
+  text-transform: lowercase;
+  font-size: 1.8rem;
+  border-bottom: 2px solid whitesmoke;
+  width: 200px;
+  margin: 1rem auto;
+}
+
+ul {
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+}
+
+li {
+  width: 200px;
+  margin: 0.5rem auto;
+  font-style: italic;
+}
+
+.stat-el {
+  width: 200px;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes flip-image {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
