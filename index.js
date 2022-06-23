@@ -62,6 +62,8 @@ const getData = (pokName) => {
 const searchPokemon = () => {
   const pokName = document.querySelector("#pokname").value.trim();
   if (!pokName) {
+    const main = document.querySelector("main");
+    main.innerHTML = "";
     const errorMes = document.createElement("p");
     errorMes.style.cssText = "color: red; font-size: 2rem;";
     errorMes.textContent = "Enter pokemon name please!";
